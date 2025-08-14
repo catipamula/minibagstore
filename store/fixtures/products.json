@@ -1,0 +1,57 @@
+[
+  {
+    "model": "store.product",
+    "pk": 1,
+    "fields": {
+      "name": "Classic Leather Tote",
+      "description": "Elegant leather tote bag for daily use.",
+      "price": "2499.00",
+      "image": "products/tote.jpg",
+      "stock": 10
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 2,
+    "fields": {
+      "name": "Travel Backpack",
+      "description": "Durable and spacious backpack for travel.",
+      "price": "1799.00",
+      "image": "products/backpack.jpg",
+      "stock": 15
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 3,
+    "fields": {
+      "name": "Evening Clutch",
+      "description": "Stylish clutch bag for special occasions.",
+      "price": "1299.00",
+      "image": "products/clutch.jpg",
+      "stock": 20
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 4,
+    "fields": {
+      "name": "Laptop Messenger Bag",
+      "description": "Functional bag for work and business meetings.",
+      "price": "2199.00",
+      "image": "products/messenger.jpg",
+      "stock": 8
+    }
+  },
+  {
+    "model": "store.product",
+    "pk": 5,
+    "fields": {
+      "name": "Canvas Shoulder Bag",
+      "description": "Lightweight casual bag for everyday errands.",
+      "price": "999.00",
+      "image": "products/canvas.jpg",
+      "stock": 12
+    }
+  }
+]
