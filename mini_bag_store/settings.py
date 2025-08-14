@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-xzw=9ev0j*kyhtt)^dl$mykwgjfrwt@bfj#w(0oz5zx04me62o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://minibagstore.onrender.com']
+ALLOWED_HOSTS = ['minibagstore.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
