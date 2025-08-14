@@ -48,6 +48,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://bagstorefrontend-7w3c3kqlo-catipamulas-projects.vercel.app/",
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True  # For testing only
@@ -167,6 +168,8 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ),
 }
+
+const API_URL = "https://your-django-backend.onrender.com/api";
 
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
