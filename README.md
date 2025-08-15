@@ -1,164 +1,138 @@
-# E-Commerce Web Application
+# 🛒 E-Commerce Appliances Store
 
-## Overview
+![React](https://img.shields.io/badge/React-17.0.2-blue?logo=react) ![Django](https://img.shields.io/badge/Django-4.2-green?logo=django) ![CSS](https://img.shields.io/badge/CSS-3-blue) ![SQLite](https://img.shields.io/badge/Database-SQLite-lightgrey)
 
-This project is a full-stack e-commerce web application built using **React.js** for the frontend and **Django** for the backend. Users can browse products, add them to their cart, checkout with payment options, and receive order confirmation emails with invoice links.
 
----
+## **Project Overview**
 
-## Features
+This is a full-stack **e-commerce web application for appliances**, allowing users to:
 
-* **User Authentication**: Login, Register, Logout.
-* **Product Catalog**: Products categorized into:
-
-  * Mobile & Accessories
-  * Computers & Laptops
-  * Audio & Headphones
-  * Smart Home & Wearables
-  * Gaming & Entertainment
-* **Cart Management**: Add, view, and remove products from cart.
-* **Checkout**: Cash on Delivery or Credit Card payment options.
-* **Order Confirmation**: Sends email with invoice link after successful order.
-* **Responsive UI**: Clean, premium look for all devices.
+* Browse, search, and filter home and kitchen appliances
+* Add products to the cart with real-time updates
+* See promotional banners with **5–10% OFF discounts**
+* Experience a **responsive, modern UI**
 
 ---
 
-## Tech Stack
+## **Technologies Used**
 
-* **Frontend**: React.js, HTML5, CSS3, JavaScript
-* **Backend**: Django, Django REST Framework
-* **Database**: SQLite (default, can be replaced with PostgreSQL)
-* **Email**: SMTP (for order confirmation emails)
-* **Authentication**: Token-based authentication
+* **Frontend:** React.js, HTML, CSS
+* **Backend:** Django REST Framework
+* **Database:** SQLite/MySQL
+* **APIs:** RESTful APIs for products and cart
 
 ---
 
-## Installation
+## **Setup Instructions**
 
-### Backend
-
-1. Clone the repository:
+### **Backend Setup (Django)**
 
 ```bash
-git clone <repository_url>
-cd <backend_folder>
+git clone <your-repo-url>
+cd <your-project-folder>
+python -m venv env      # Create virtual environment
+# Activate environment
+# Windows:
+env\Scripts\activate
+# Linux/Mac:
+source env/bin/activate
+pip install -r requirements.txt   # Install dependencies
+python manage.py migrate           # Run migrations
+python manage.py runserver         # Start backend server
 ```
 
-2. Create a virtual environment:
+Backend runs at: `http://127.0.0.1:8000/`
 
-```bash
-python -m venv env
-source env/bin/activate  # Linux/Mac
-env\Scripts\activate     # Windows
-```
+---
 
-3. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Apply migrations:
-
-```bash
-python manage.py makemigrations
-python manage.py migrate
-```
-
-5. Create a superuser (for admin):
-
-```bash
-python manage.py createsuperuser
-```
-
-6. Run the server:
-
-```bash
-python manage.py runserver
-```
-
-### Frontend
-
-1. Navigate to frontend folder:
+### **Frontend Setup (React)**
 
 ```bash
 cd frontend
+npm install        # Install dependencies
+npm start          # Start frontend server
 ```
 
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-3. Run the development server:
-
-```bash
-npm start
-```
+Frontend runs at: `http://localhost:3000/`
 
 ---
 
-## Usage
-
-1. Open the application at `http://localhost:3000`.
-2. Register or login.
-3. Browse products and add to cart.
-4. Checkout and place your order.
-5. Receive confirmation email with invoice link.
-
----
-
-## Folder Structure
+## **Project Structure**
 
 ```
-├── backend/
-│   ├── manage.py
-│   ├── api/
-│   │   ├── models.py
-│   │   ├── views.py
-│   │   └── urls.py
-│   └── ...
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── ProductCard.js
-│   │   │   ├── Navbar.js
-│   │   │   └── ...
-│   │   ├── pages/
-│   │   │   ├── ProductsPage.js
-│   │   │   ├── Cart.js
-│   │   │   └── Checkout.js
-│   │   └── App.js
-│   └── package.json
-├── README.md
-└── requirements.txt
+/frontend
+  ├── src
+      ├── components
+      ├── pages
+      ├── api
+      └── Home.css
+/backend
+  ├── manage.py
+  ├── app
+      ├── models.py
+      ├── views.py
+      └── urls.py
+      |_requirements.txt 
 ```
 
 ---
 
-## API Endpoints
+## **Features**
 
-| Endpoint                 | Method | Description              |
-| ------------------------ | ------ | ------------------------ |
-| `/api/products/`         | GET    | Fetch all products       |
-| `/api/cart/`             | GET    | Get current user’s cart  |
-| `/api/cart/add/`         | POST   | Add product to cart      |
-| `/api/cart/remove/<id>/` | DELETE | Remove product from cart |
-| `/api/place-order/`      | POST   | Place an order           |
-
----
-
-## Contributing
-
-1. Fork the repository.
-2. Create a branch: `git checkout -b feature-name`.
-3. Commit changes: `git commit -m "Add feature"`.
-4. Push branch: `git push origin feature-name`.
-5. Create a pull request.
+* 🏷 Browse products by **category** and **price range**
+* 🔍 Dynamic **search functionality**
+* 🛒 **Add-to-cart** with real-time updates
+* 🎯 **Promotional banners** with discount badges
+* 📱 Fully **responsive layout** for mobile and desktop
+* ✨ Smooth **hover effects** on buttons and cards
 
 ---
 
-## License
+## **Screenshots**
 
-This project is licensed under the MIT License.
+### **1. Homepage**
+
+![Homepage Screenshot](screenshots/homepage.png)
+![Homepage2 Screenshot](screenshots/homepage2.png)
+![Homepage3 Screenshot](screenshots/homepage3.png)
+
+## **Authentication**
+![Authentication Screenshot](screenshots/login.png)
+![Authentication Screenshot](screenshots/register.png)
+
+### **2. Product Listing**
+
+![Product Listing Screenshot](screenshots/products.png)
+
+### **3. Cart Page**
+
+![Cart Screenshot](screenshots/cart.png)
+
+### **4. checkout Page**
+
+![checkout Screenshot](screenshots/checkout.png)
+
+### **5. creditcard  Page**
+
+![credit Card Screenshot](screenshots/card.png)
+
+### **5. paymentsuccess Page**
+
+![paymentsuccess Screenshot](screenshots/paymentsuccess.png)
+
+### **5. order Page**
+
+![order page Screenshot](screenshots/order.png)
+
+
+### **5. invoice Page**
+
+![invoice page Screenshot](screenshots/invoice.png)
+
+## **Usage**
+
+1. Open frontend: `http://localhost:3000/`
+2. Browse products or use **search/filter options**
+3. Click “Shop Now” or “Explore Deals” banners
+4. Add products to cart and view items
+
